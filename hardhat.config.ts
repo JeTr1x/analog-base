@@ -29,7 +29,7 @@ const config: HardhatUserConfig = {
         network: "sepolia",
         chainId: 11155111,
         urls: {
-          apiURL:"https://eth-sepolia.blockscout.com/api/v2/",
+          apiURL:"https://eth-sepolia.blockscout.com/api",
           browserURL: "https://eth-sepolia.blockscout.com/",
         }
       }
