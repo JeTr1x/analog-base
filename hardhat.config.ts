@@ -14,28 +14,27 @@ const config: HardhatUserConfig = {
     ]
   },
   networks: {
-    "morph": {
-       url: "https://rpc-testnet.morphl2.io",
+    "sepolia": {
+       url: "https://1rpc.io/sepolia",
        accounts: [process.env.PRIVATE_KEY as string],
        gasPrice: 1500000000,
     },
   },
   etherscan: {
     apiKey: {
-      morph: "abc"
+      sepolia: "abc"
     },
     customChains: [
       {
-        network: "morph",
-        chainId: 2710,
+        network: "sepolia",
+        chainId: 11155111,
         urls: {
-          apiURL: "https://explorer-api-testnet.morphl2.io/api",
-          browserURL: "https://explorer-testnet.morphl2.io",
+          browserURL: "https://sepolia.etherscan.io/",
         }
       }
     ]
   },
-  defaultNetwork: 'morph',
+  defaultNetwork: 'sepolia',
 };
 
 export default config;
