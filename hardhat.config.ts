@@ -22,7 +22,7 @@ const config: HardhatUserConfig = {
     "shibuya": {
        url: "https://shibuya.public.blastapi.io",
        accounts: [process.env.PRIVATE_KEY as string],
-       gasPrice: 1500000000,
+       gasPrice: 1000000000000,
     },
   },
   etherscan: {
