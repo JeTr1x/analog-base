@@ -1,4 +1,4 @@
-mport { ethers } from "hardhat";
+import { ethers } from "hardhat";
 
 async function main() {
   const gateway = '0x995d4cf491660a7d6827cb9057fddf8c348db793'
